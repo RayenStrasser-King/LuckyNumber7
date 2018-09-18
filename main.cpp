@@ -7,7 +7,7 @@ int main()
 {
   int guess;
 
-  cout<<"Guess a number between: 1-10 ";
+  cout<<"Guess a number between 1-10: ";
   cin>>guess;
   //when they guess correctly (7), display:
   if (guess == 7)
