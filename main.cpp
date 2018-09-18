@@ -9,9 +9,6 @@ int main()
 
   cout<<"Guess a number between 1-10\n";
   cin>>guess;
-
-if (guess > 10)
-{ cout<<"Enter a number 1 - 10 Please!!!\n";}     
   //when they guess correctly (7), display:
   if (guess == 7)
 { cout<<"YES! Lucky number 7!\n";}
