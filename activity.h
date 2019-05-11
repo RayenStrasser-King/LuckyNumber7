@@ -34,19 +34,41 @@ class Course
                         courseName = s1;
                         numUnits = i1;
                 }
-                
+
                 int getUnits()
                 {
                         return numUnits;
                 }
-                
+
                 string getCName();
+
+                void clearStudents()
+                {
+                        vs.clear();
+                        return;
+                }
+
                 void setSV (string x, int y)
                 {
                         Student c(y,x);
                         vs.push_back(c);
-                        cout<<"Student was saved"<<endl;
+                        cout<<"Student added"<<endl;
+                        return;
                 }
+
                 void printStudents();
+
+                void bubbleSortStudents();
+                void deleteStudent(string n)
+                {
+                        for (int i = 0; i < vs.size(); i++)
+                        {
+                                if (vs[i].getName() == n)
+                                {
+                                        vs.erase(vs.begin() + i);
+                                }
+                        }
+                        return;
+                }
 };
 #endif
